@@ -16,7 +16,7 @@ namespace serialize_deserialize_netcore
         [Test]
         public void Serialize()
         {
-            Movie movie = new Movie {Id= 1, Title = "Django Uncharted"};
+            Movie movie = new Movie {Id= 1, Title = "Django Unchained"};
             string result = JsonConvert.SerializeObject(movie);
 
             Console.WriteLine("Object serialized: " + result);
@@ -47,7 +47,7 @@ namespace serialize_deserialize_netcore
         {
             List<Movie> movie = new List<Movie>
             {
-                new Movie {Id= 1, Title = "Django Uncharted"},
+                new Movie {Id= 1, Title = "Django Unchained"},
                 new Movie {Id= 2, Title = "Inglourious Basterds"},
                 new Movie {Id= 3, Title = "American Sniper"},
                 new Movie {Id= 4, Title = "Birdman"}    
